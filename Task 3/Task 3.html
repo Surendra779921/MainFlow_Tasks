@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="Task 3.css">
+</head>
+<body>
+    <!-- Form Section -->
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul id="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services
+                <ul class="submenu">
+                    <li>Web Development</li>
+                    <li>Graphic Design</li>
+                    <li>SEO</li>
+                </ul>
+            </li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Dynamic Content Section -->
+    <div>
+        <label for="dynamicInput">Enter something:</label>
+        <input type="text" id="dynamicInput">
+        <p>Your input: <span id="dynamicOutput"></span></p>
+    </div>
+
+    <script src="Task 3.js"></script>
+</body>
+</html>
